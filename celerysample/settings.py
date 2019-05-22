@@ -138,4 +138,6 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Activate Django-Heroku.
 django_heroku.settings(locals())
 
-CELERY_RESULT_BACKEND = 'django-db'
+# CELERY_RESULT_BACKEND = 'django-db' # local storage
+BROKER_URL = os.environ['REDIS_URL']
+CELERY_RESULT_BACKEND = os.environ['REDIS_URL']

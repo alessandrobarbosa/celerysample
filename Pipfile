@@ -13,5 +13,6 @@ gunicorn = "*"
 django = "*"
 celery = "*"
 django-celery-results = "*"
+redis = "*"
 
 [dev-packages]
