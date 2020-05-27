@@ -22,8 +22,11 @@ def xsum(numbers):
 
 
 @shared_task
+def test():
+    print('Olha eu aqui!')
+
+
+@shared_task
 def slow_task():
-    print('Started task, processing...')
-    time.sleep(120)
-    print('Finished Task')
-    return True
+    time.sleep(5)
+    print('+>>>>>> Slow after 5 seconds')

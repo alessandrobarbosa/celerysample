@@ -4,15 +4,16 @@ verify_ssl = true
 name = "pypi"
 
 [requires]
-python_version = "3.6"
+python_version = "3.8"
 
 [packages]
-"psycopg2-binary" = "*"
+psycopg2-binary = "*"
 django-heroku = "*"
 gunicorn = "*"
 django = "*"
 celery = "*"
 django-celery-results = "*"
 redis = "*"
+django-celery-beat = "*"
 
 [dev-packages]
